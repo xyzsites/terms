@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>Terms & Conditions</title>
+ <meta name="description" content="Official Terms & Conditions and Affiliate Disclosure for xyzsites – 4aKid affiliate partner.">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+ <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+ <div class="container">
+
+  <section class="hero" style="padding:100px 20px 70px; background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1586953208448-03f42a981f79?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover border-radius:20px;">
+   <h1><i class="fas fa-scale-balanced"></i> Terms & Conditions</h1>
+   <p class="big" style="font-size:1.4rem;">xyzsites + 4aKid Affiliate Team</p>
+  </section>
+
+  <section class="terms-content">
+   <h2 style="text-align:center; color:#25D366;">Affiliate Disclosure</h2>
+   <p><strong>xyzsites is a proud participant in the 4aKid Affiliate Program</strong>, an affiliate advertising program that allows us to earn commissions by linking to <a href="https://4akid.co.za/?ref=wzmpfjkx" style="color:#25D366;">4akid.co.za</a>.</p>
+   <p>This means when you click our links and make a purchase, we may earn a commission — <strong>at no extra cost to you</strong>.</p>
+
+   <h2>Commission Structure</h2>
+   <ul>
+    <li><strong>Direct Sales:</strong> 20% commission</li>
+    <li><strong>Level 1:</strong> 5% override</li>
+    <li><strong>Level 2:</strong> 7.5% override</li>
+    <li><strong>Level 3+:</strong> 10% override</li>
+   </ul>
+
+   <h2>Important: We Are NOT 4aKid</h2>
+   <p class="highlight-box" style="background:rgba(255,107,107,0.15); padding:20px; border-radius:12px; border-left:5px solid #ff2e63;">
+    <strong>We are NOT responsible for:</strong><br>
+    • Product quality • Shipping • Returns • Stock<br>
+    All orders are 100% handled by 4aKid (Pty) Ltd.
+   </p>
+
+   <h2>Privacy</h2>
+   <p>We do <strong>not</strong> collect personal data, use cookies, or store payment info. Everything happens securely on 4aKid's website.</p>
+
+   <!-- Checkbox + Hidden CTA -->
+   <div class="terms-checkbox">
+    <input type="checkbox" id="agree">
+    <label for="agree">I have read and agree to the Terms & Conditions</label>
+   </div>
+
+   <!--
+   <a href="#https://xyzsites.github.io/join" class="cta-big hidden-cta" id="joinBtn">
+    <i class="fab fa-whatsapp"></i> Yes, Take Me to the Join Page!
+   </a>
+   -->
+
+   <p style="text-align:center; margin-top:50px; opacity:0.7;">
+    <em>Last updated: November 2025</em>
+   </p>
+  </section>
+
+  <footer>
+   <p>© 2025 xyzsites + 4aKid Affiliate Team | Made with ❤️ in South Africa</p>
+  </footer>
+ </div>
+
+ <!-- Simple JS to show the button only after checkbox is ticked -->
+ <script>
+  const checkbox = document.getElementById('agree');
+  const btn = document.getElementById('joinBtn');
+
+  checkbox.addEventListener('change', function() {
+    if (this.checked) {
+      btn.classList.remove('hidden-cta');
+      btn.style.display = 'inline-block';
+      // Optional: auto-scroll to button
+      btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      btn.classList.add('hidden-cta');
+      btn.style.display = 'none';
+    }
+  });
+ </script>
+</body>
+</html>
